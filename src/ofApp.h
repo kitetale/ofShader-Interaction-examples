@@ -23,11 +23,17 @@ class ofApp : public ofBaseApp{
     ofShader shader1;
     ofShader shader2;
     
-    ofFbo maskFbo;
+    ofFbo maskFbo; // alpha mask
     ofFbo shader1Fbo;
     ofFbo shader2Fbo;
     
+    
     ofImage brushImage;
     
+    ofVideoPlayer movie;
+    int scaler = 6;
+    ofTexture scaledMov;
+    
     bool bBrushDown;
+    int exampleNum;
 };

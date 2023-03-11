@@ -4,6 +4,7 @@
 uniform sampler2DRect tex0;//this is the background texture
 uniform sampler2DRect maskTex;
 uniform sampler2DRect foregroundTex;
+uniform float scaler;
 
 // this comes from the vertex shader
 in vec2 texCoordVarying;
@@ -18,7 +19,7 @@ void main()
 	vec4 fore = texture(foregroundTex, texCoordVarying);
 
     // get alpha from mask
-    float mask = texture(maskTex, texCoordVarying).r;
+    float mask = texture(maskTex, texCoordVarying/scaler).r;
 	
 	//mix colors from background and foreground based on the mask value
     outputColor = mix(fore , back, mask);
