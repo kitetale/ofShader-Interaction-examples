@@ -18,4 +18,13 @@ ofShader + interaction mix and match example prototypes in openFrameworks for my
 
 ## Interaction Examples ##
 1. Shader 1 + Shader 2 with alpha brush draw Fbo 
-![example1: two shaders with alpha brush draw with cursor example](example1.gif)
+
+![example1: two shaders with alpha brush draw with cursor example](./documentation/example1.gif)
+
+Modified fragment shader codes [1](https://www.shadertoy.com/view/msyGRm), [2](https://www.shadertoy.com/view/XlX3DM) by guil and ofShader example #7 to fit with openFrameworks setting
+
+
+## Reference Links ##
+* [ofBook Shader Introduction](https://openframeworks.cc/ofBook/chapters/shaders.html)
+* [ofShader documentation](https://openframeworks.cc/documentation/gl/ofShader/)
+* [shader toy](https://www.shadertoy.com/)
